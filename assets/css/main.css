@@ -261,11 +261,11 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #373a3c;
-  background-color: #80ff80; }
+  color: #000000;
+  background-color: white; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -545,7 +545,7 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   line-height: 1.5;
-  background-color: #80ff80;
+  background-color: white;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   transition: all .2s ease-in-out;
@@ -597,7 +597,7 @@ pre {
   margin-bottom: 1rem;
   font-size: 90%;
   line-height: 1.5;
-  color: #373a3c; }
+  color: #000000; }
   pre code {
     padding: 0;
     font-size: inherit;
@@ -1251,7 +1251,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #eceeef; }
   .table .table {
-    background-color: #80ff80; }
+    background-color: white; }
 
 .table-sm th,
 .table-sm td {
@@ -1335,7 +1335,7 @@ pre {
 
 .thead-inverse th {
   color: #fff;
-  background-color: #373a3c; }
+  background-color: #000000; }
 
 .thead-default th {
   color: #55595c;
@@ -1343,7 +1343,7 @@ pre {
 
 .table-inverse {
   color: #eceeef;
-  background-color: #373a3c; }
+  background-color: #000000; }
   .table-inverse.table-bordered {
     border: 0; }
   .table-inverse th,
@@ -1732,20 +1732,20 @@ fieldset[disabled] a.btn {
     border-color: #0275d8; }
 
 .btn-secondary {
-  color: #373a3c;
+  color: #000000;
   background-color: #fff;
   border-color: #ccc; }
   .btn-secondary:hover {
-    color: #373a3c;
+    color: #000000;
     background-color: #e6e6e6;
     border-color: #adadad; }
   .btn-secondary:focus, .btn-secondary.focus {
-    color: #373a3c;
+    color: #000000;
     background-color: #e6e6e6;
     border-color: #adadad; }
   .btn-secondary:active, .btn-secondary.active,
   .open > .btn-secondary.dropdown-toggle {
-    color: #373a3c;
+    color: #000000;
     background-color: #e6e6e6;
     border-color: #adadad;
     background-image: none; }
@@ -1753,7 +1753,7 @@ fieldset[disabled] a.btn {
     .open > .btn-secondary.dropdown-toggle:hover,
     .open > .btn-secondary.dropdown-toggle:focus,
     .open > .btn-secondary.dropdown-toggle.focus {
-      color: #373a3c;
+      color: #000000;
       background-color: #d4d4d4;
       border-color: #8c8c8c; }
   .btn-secondary.disabled:focus, .btn-secondary.disabled.focus, .btn-secondary:disabled:focus, .btn-secondary:disabled.focus {
@@ -2103,7 +2103,7 @@ input[type="button"].btn-block {
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: 1rem;
-  color: #373a3c;
+  color: #000000;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -2124,13 +2124,13 @@ input[type="button"].btn-block {
   clear: both;
   font-weight: normal;
   line-height: 1.5;
-  color: #373a3c;
+  color: #000000;
   text-align: inherit;
   white-space: nowrap;
   background: none;
   border: 0; }
   .dropdown-item:focus, .dropdown-item:hover {
-    color: #2b2d2f;
+    color: black;
     text-decoration: none;
     background-color: #f5f5f5; }
   .dropdown-item.active, .dropdown-item.active:focus, .dropdown-item.active:hover {
@@ -2633,7 +2633,7 @@ input[type="button"].btn-block {
   .nav-tabs .nav-item.open .nav-link:focus,
   .nav-tabs .nav-item.open .nav-link:hover {
     color: #55595c;
-    background-color: #80ff80;
+    background-color: white;
     border-color: #ddd #ddd transparent; }
 
 .nav-pills::after {
@@ -3858,7 +3858,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 .bg-inverse {
   color: #eceeef;
-  background-color: #373a3c; }
+  background-color: #000000; }
 
 .bg-faded {
   background-color: #f7f7f9; }
@@ -4155,5 +4155,15 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 /* Custom Mixins -------------------- */
 /* Base Styles -------------------- */
+body {
+  font-family: "Roboto", Arial, sans-serif; }
+
+.r-height {
+  height: 300px;
+  border: 1px solid; }
+
+.nav-test {
+  height: 200px;
+  background: gray; }
 
 /*# sourceMappingURL=main.css.map */
