@@ -4181,7 +4181,7 @@ nav {
   height: 60px;
   background-color: #4f616d; }
   nav .home {
-    background: url("/assets/img/icon-home.png") no-repeat 0 center;
+    background: url(../img/icon-home.png) no-repeat 0 center;
     width: 50px;
     height: 59px; }
     nav .home img {
