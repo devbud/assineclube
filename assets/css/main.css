@@ -4181,7 +4181,7 @@ nav {
   height: 60px;
   background-color: #4f616d; }
   nav .home {
-    background-image: url(/assets/img/icon_home.png);
+    background-image: url(../assets/img/icon_home.png);
     background-repeat: no-repeat;
     background-position: 0 center;
     width: 50px;
@@ -4208,9 +4208,9 @@ nav {
     .top-bar .revista-marcas ul li {
       display: inline; }
     .top-bar .revista-marcas ul img {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9);
-      margin-right: 18px;
+      -webkit-transform: scale(0.85);
+              transform: scale(0.85);
+      margin-right: 10px;
       transition: opacity .25s ease-in-out;
       transition: 0.2s all; }
       .top-bar .revista-marcas ul img:hover {
