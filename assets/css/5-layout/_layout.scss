@@ -9,20 +9,18 @@
 	}
 }
 
-.newsletter {
-	height: 256px;
-	background-color: rgb(223, 223, 223);
+h1 .title {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 38px;
+	font-weight: 900;
+	text-align: center;
+}
+.color-title {
+	color: #c00d0e;
 }
 
 
-
-.©_Editora_Caras__Todos_os_direitos_reservados {
-  font-size: 14px;
-  font-family: "Roboto Condensed";
-  color: rgb(0, 0, 0);
-  line-height: 1.571;
-  position: absolute;
-  left: 343.375px;
-  top: 4305.003px;
-  z-index: 41;
+.newsletter {
+	height: 256px;
+	background-color: rgb(223, 223, 223);
 }
