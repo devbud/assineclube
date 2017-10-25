@@ -32,6 +32,16 @@ nav {
 			li {
 				display: inline;
 			}
+			img {
+				transform: scale(.9);
+				margin-right: 18px;
+				@include transition;
+				@include transition-smooth;
+				&:hover {
+					@include transform-zoom;
+				}
+
+			}
 		}
 	}
 }

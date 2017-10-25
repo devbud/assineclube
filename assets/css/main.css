@@ -4207,6 +4207,15 @@ nav {
     padding: 10px 0; }
     .top-bar .revista-marcas ul li {
       display: inline; }
+    .top-bar .revista-marcas ul img {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+      margin-right: 18px;
+      transition: opacity .25s ease-in-out;
+      transition: 0.2s all; }
+      .top-bar .revista-marcas ul img:hover {
+        -webkit-transform: scale(1.05, 1.05);
+        transform: scale(1.05, 1.05); }
 
 .vertical-center {
   display: table-cell;
