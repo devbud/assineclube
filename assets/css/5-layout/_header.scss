@@ -2,12 +2,17 @@ nav {
 	height: 60px;
 	@include bg-default;
 	.home {
-		background: url(/assets/img/icon_home.png) no-repeat 0 center;
+		background-image: url(/assets/img/icon_home.png);
+		background-repeat: no-repeat;
+		background-position: 0 center;
 		width: 50px;
 		height: 59px;
 		img {
 			margin-left: 70px;
 			margin-top: 18px;
+			width: 204px;
+			height: 23px;
+			padding-bottom: 5px;
 			@include transition;
 			@include transition-smooth;
 			&:hover {
@@ -17,12 +22,19 @@ nav {
 		}
 	}
 }
-
 .top-bar {
 	height: 160px;
 	background: white;
+	.revista-marcas {
+		ul {
+			list-style: none;
+			padding: 10px 0;
+			li {
+				display: inline;
+			}
+		}
+	}
 }
-
 .vertical-center {
  display: table-cell;
  float: none;

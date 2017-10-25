@@ -4181,12 +4181,17 @@ nav {
   height: 60px;
   background-color: #4f616d; }
   nav .home {
-    background: url(/assets/img/icon_home.png) no-repeat 0 center;
+    background-image: url(/assets/img/icon_home.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
     width: 50px;
     height: 59px; }
     nav .home img {
       margin-left: 70px;
       margin-top: 18px;
+      width: 204px;
+      height: 23px;
+      padding-bottom: 5px;
       transition: opacity .25s ease-in-out;
       transition: 0.2s all; }
       nav .home img:hover {
@@ -4197,6 +4202,11 @@ nav {
 .top-bar {
   height: 160px;
   background: white; }
+  .top-bar .revista-marcas ul {
+    list-style: none;
+    padding: 10px 0; }
+    .top-bar .revista-marcas ul li {
+      display: inline; }
 
 .vertical-center {
   display: table-cell;
