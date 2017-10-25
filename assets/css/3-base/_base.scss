@@ -2,3 +2,36 @@
 body {
   font-family: "Roboto", Arial, sans-serif;
 }
+
+a:before,
+a:after {
+  cursor: pointer;
+  @include transition-smooth;
+}
+
+a {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -ms-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}

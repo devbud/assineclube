@@ -4158,12 +4158,58 @@ a.bg-danger:focus, a.bg-danger:hover {
 body {
   font-family: "Roboto", Arial, sans-serif; }
 
-.r-height {
-  height: 300px;
-  border: 1px solid; }
+a:before,
+a:after {
+  cursor: pointer;
+  transition: 0.2s all; }
 
-.nav-test {
-  height: 200px;
-  background: gray; }
+a {
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 250ms;
+  transition-delay: 0s;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.newsletter {
+  height: 256px;
+  background-color: #dfdfdf; }
+
+nav {
+  height: 60px;
+  background-color: #4f616d; }
+  nav .home {
+    background: url(/assets/img/icon_home.png) no-repeat 0 center;
+    width: 50px;
+    height: 59px; }
+    nav .home img {
+      margin-left: 70px;
+      margin-top: 18px;
+      transition: opacity .25s ease-in-out;
+      transition: 0.2s all; }
+      nav .home img:hover {
+        -webkit-transform: scale(1.05, 1.05);
+        transform: scale(1.05, 1.05);
+        opacity: 0.75; }
+
+.top-bar {
+  height: 160px;
+  background: white; }
+
+.vertical-center {
+  display: table-cell;
+  float: none;
+  vertical-align: middle; }
+
+footer {
+  height: 520px;
+  background-color: #4f616d; }
+
+.copyright {
+  padding: 30px 0 50px 0; }
+  .copyright span {
+    font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */
