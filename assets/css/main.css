@@ -4196,6 +4196,31 @@ nav {
         -webkit-transform: scale(1.05, 1.05);
         transform: scale(1.05, 1.05);
         opacity: 0.75; }
+  nav .nav {
+    float: right; }
+    nav .nav ul {
+      list-style: none;
+      margin-top: 18px; }
+      nav .nav ul li {
+        display: inline;
+        margin-left: 16px; }
+      nav .nav ul a {
+        background: #62727c;
+        border-radius: 13.5px;
+        border: 1px solid rgba(255, 255, 255, 0);
+        padding: 6px 18px;
+        font-size: 12px;
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        color: white;
+        transition: opacity .25s ease-in-out;
+        -o-transition: opacity .25s ease-in-out;
+        -ms-transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out; }
+        nav .nav ul a:hover {
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          opacity: 0.75; }
 
 .top-bar {
   height: 160px;

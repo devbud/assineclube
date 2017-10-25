@@ -19,6 +19,32 @@ nav {
 			}
 		}
 	}
+	.nav {
+		float: right;
+		ul {
+			list-style:none;
+			margin-top: 18px;
+			li {
+				display: inline;
+				margin-left: 16px;
+			}
+			a {
+				background: rgb(98, 114, 124);
+				border-radius: 13.5px;
+				border: 1px solid rgba(255,255,255, 0.0);
+				padding: 6px 18px;
+				font-size: 12px;
+				font-family: "Roboto Condensed", sans-serif;
+				text-transform: uppercase;
+				color: white;
+				@include transition;
+				&:hover {
+					border: 1px solid rgba(255,255,255, 0.3);
+					@include opacity;
+				}
+			}
+		}
+	}
 }
 .top-bar {
 	height: 160px;
