@@ -1,7 +1,28 @@
-
+.slider {
+	margin-top: -5px;
+	ul {
+		padding: 0;
+		list-style: none;
+		li{
+			display: inline;
+		}
+	}
+}
 
 .newsletter {
 	height: 256px;
 	background-color: rgb(223, 223, 223);
 }
 
+
+
+.©_Editora_Caras__Todos_os_direitos_reservados {
+  font-size: 14px;
+  font-family: "Roboto Condensed";
+  color: rgb(0, 0, 0);
+  line-height: 1.571;
+  position: absolute;
+  left: 343.375px;
+  top: 4305.003px;
+  z-index: 41;
+}

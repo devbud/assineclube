@@ -5,7 +5,13 @@ footer {
 
 .copyright {
 	padding: 30px 0 50px 0; 
-	span {
+	a {
+		font-family: "Roboto Condensed", sans-serif;
 		font-size: 14px;
 	}
+}
+
+// CLASSE MARGIN RIGHT
+.mg-right {
+	float: right;
 }
