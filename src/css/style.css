@@ -113,7 +113,8 @@ nav {
         opacity: 0.8; }
 
 .top-bar {
-  background: white; }
+  background: white;
+  border-bottom: 1px solid #e7e7e7; }
   .top-bar .revista-marcas ul {
     padding: 0;
     list-style: none;
