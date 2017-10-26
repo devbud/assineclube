@@ -58,7 +58,7 @@ a:hover {
     transform: scale(1.05, 1.05); }
 
 .txt-red {
-  color: #c00d0e; }
+  color: #e00506; }
 
 .txt-bld {
   font-weight: 900; }
@@ -74,10 +74,10 @@ a:hover {
   letter-spacing: -0.35px; }
 
 .bg-red {
-  background-color: #c00d0e; }
+  background-color: #e00506; }
 
 .bg-gray {
-  background-color: #4f616d; }
+  background-color: #44626D; }
 
 .mt-revistas {
   margin-top: 45px; }
@@ -89,7 +89,7 @@ a:hover {
 /* HEADER */
 nav {
   height: 60px;
-  background-color: #4f616d; }
+  background-color: #44626D; }
   nav .home {
     background: url(../img/icon-home.png) no-repeat 0 center;
     width: 50px;
@@ -204,7 +204,7 @@ p.txt-p {
   margin-bottom: 13px; }
 
 a.btn-assine {
-  background-color: #4f616d;
+  background-color: #44626D;
   background-image: url(../img/seta.gif);
   background-repeat: no-repeat;
   background-position: right center;
@@ -225,7 +225,7 @@ img.kit-churras {
 /* FOOTER */
 footer {
   height: 520px;
-  background-color: #4f616d;
+  background-color: #44626D;
   border: none;
   outline: none; }
 

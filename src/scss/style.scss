@@ -9,11 +9,11 @@ body {
 
 @mixin bg-default {
     // background-color: rgb(79, 97, 109);
-    background-color: #4f616d;
+    background-color: #44626D;
 }
 @mixin bg-red {
 	// background-color: #c00d0e;
-	background-color: rgb(192,13,14);
+	background-color: rgb(224, 5, 6);
 }
 @mixin opacity {
 	opacity: 0.88;
@@ -21,7 +21,7 @@ body {
 
 @mixin color-red{
 	// color: #c00d0e;
-	color: rgb(192,13,14);
+	color: rgb(224, 5, 6);
 }
 
 @mixin transition-smooth {
