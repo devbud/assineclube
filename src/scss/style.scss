@@ -109,6 +109,15 @@ a:hover {
 	font-size:20px;
 }
 
+.txt-a {
+	font-size: 17px;
+    letter-spacing: -0.3px;
+}
+
+.letter-space {
+	letter-spacing: -0.7px;
+}
+
 .bg-red {
 	@include bg-red;
 }
@@ -116,6 +125,10 @@ a:hover {
 .bg-gray {
 	@include bg-default;
 }
+
+// .img-capas {
+// 	max-height: 310px;
+// }
 
 .mybd {
 	min-height: 200px;
@@ -245,8 +258,9 @@ a.btn-assine {
 		background-repeat: no-repeat;
 		background-position: right center;
 		background-size: contain;
-		padding: 11px 24px 12px;
 		opacity: 1;
+		display: inline-block;
+    	padding: 10px;
 		&:hover {
 			@include opacity;
 			// opacity: 0.9;
