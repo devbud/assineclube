@@ -10,9 +10,17 @@ body {
 @mixin bg-default {
     background-color: rgb(79, 97, 109);
 }
-
+@mixin bg-red {
+	// background-color: #c00d0e;
+	background-color: rgb(192,13,14);
+}
 @mixin opacity {
 	opacity: 0.8;
+}
+
+@mixin color-red{
+	// color: #c00d0e;
+	color: rgb(192,13,14);
 }
 
 @mixin transition-smooth {
@@ -90,8 +98,7 @@ a:hover {
 }
 
 .txt-red {
-	// color: #c00d0e;
-	color: rgb(192,13,14);
+	@include color-red;
 }
 
 .txt-bld {
@@ -100,6 +107,14 @@ a:hover {
 
 .txt-p {
 	font-size:22px;
+}
+
+.bg-red {
+	@include bg-red;
+}
+
+.bg-gray {
+	@include bg-default;
 }
 
 .mybd {
@@ -221,8 +236,10 @@ h2.title {
 		letter-spacing:-1px;
 	}
 	.btn-assine {
-		@include bg-default;
-		padding: 6px 20px;
+		background:#f1f1f1;
+		span {
+			padding: 6px 20px;
+		}
 	}
 }
 
