@@ -1,96 +1,43 @@
-"use strict";
+const gulp        = require('gulp');
+const browserSync = require('browser-sync').create();
+const sass        = require('gulp-sass');
 
-var gulp = require('gulp'),
-  concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
-  rename = require('gulp-rename'),
-    sass = require('gulp-sass'),
-    maps = require('gulp-sourcemaps'),
-     del = require('del'),
-     autoprefixer = require('gulp-autoprefixer'),
-     browserSync = require('browser-sync').create(),
-     htmlreplace = require('gulp-html-replace'),
-     cssmin = require('gulp-cssmin');
-
-gulp.task("concatScripts", function() {
-    return gulp.src([
-        'assets/js/jquery-2.2.1.min.js',
-        'assets/js/tether.min.js',
-        'assets/js/bootstrap.min.js',
-        'assets/js/functions.js'
-        ])
-    .pipe(maps.init())
-    .pipe(concat('main.js'))
-    .pipe(maps.write('./'))
-    .pipe(gulp.dest('assets/js'))
-    .pipe(browserSync.stream());
+// Compile Sass & Inject Into Browser
+gulp.task('sass', function() {
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'])
+        .pipe(sass())
+        .pipe(gulp.dest("src/css"))
+        .pipe(browserSync.stream());
 });
 
-gulp.task("minifyScripts", ["concatScripts"], function() {
-  return gulp.src("assets/js/main.js")
-    .pipe(uglify())
-    .pipe(rename('main.min.js'))
-    .pipe(gulp.dest('dist/assets/js'));
+// Move JS Files to src/js
+gulp.task('js', function() {
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js','node_modules/popper.js/dist/umd/popper.min.js'])
+        .pipe(gulp.dest("src/js"))
+        .pipe(browserSync.stream());
 });
 
-gulp.task('compileSass', function() {
-  return gulp.src("assets/css/main.scss")
-      .pipe(maps.init())
-      .pipe(sass().on('error', sass.logError))
-      .pipe(autoprefixer())
-      .pipe(maps.write('./'))
-      .pipe(gulp.dest('assets/css'))
-      .pipe(browserSync.stream());
+// Watch Sass & Serve
+gulp.task('serve', ['sass'], function() {
+
+    browserSync.init({
+        server: "./src"  
+    });
+
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
-gulp.task("minifyCss", ["compileSass"], function() {
-  return gulp.src("assets/css/main.css")
-    .pipe(cssmin())
-    .pipe(rename('main.min.css'))
-    .pipe(gulp.dest('dist/assets/css'));
-});
-
-gulp.task('watchFiles', function() {
-  gulp.watch('assets/css/**/*.scss', ['compileSass']);
-  gulp.watch('assets/js/*.js', ['concatScripts']);
+// Move Fonts to src/fonts
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('src/fonts'))
 })
 
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
+// Move Font Awesome CSS to src/css
+gulp.task('fa', function() {
+  return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
+    .pipe(gulp.dest('src/css'))
+})
 
-gulp.task('clean', function() {
-  del(['dist', 'assets/css/main.css*', 'assets/js/main*.js*']);
-});
-
-gulp.task('renameSources', function() {
-  return gulp.src('index.html')
-    .pipe(htmlreplace({
-        'js': 'assets/js/main.min.js',
-        'css': 'assets/css/main.min.css'
-    }))
-    .pipe(gulp.dest('dist/'));
-});
-
-gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
-  return gulp.src(['index.html', 'favicon.ico',
-                   "assets/img/**", "assets/fonts/**"], { base: './'})
-            .pipe(gulp.dest('dist'));
-});
-
-gulp.task('serve', ['watchFiles'], function(){
-  browserSync.init({
-        server: "./"
-    });
-
-    gulp.watch("assets/css/**/*.scss", ['watchFiles']);
-    gulp.watch("*.html").on('change', browserSync.reload);
-});
-
-gulp.task("default", ["clean", 'build'], function() {
-  gulp.start('renameSources');
-});
+gulp.task('default', ['js','serve', 'fa', 'fonts']);

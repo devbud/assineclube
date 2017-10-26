@@ -1,25 +1,23 @@
-# Bootstrap 4 boilerplate
-This repository contains the project code for my Bootstrap 4 boilerplate.
-A Bootstrap 4 boiler plate with sass, concatenation, minification, autoprefixer, browser-sync, git vcs and gulp task runner
+# Bootstrap 4 Starter Pack (BETA 4.0.0)
 
-## Using this Repo
-This is a node project.
+Includes complete Bootstrap 4.0.0-beta dev environment with gulp and sass
 
-## Quick Start
-```
-# Clone this repo
-git clone https://github.com/wapbamboogie/bootstrap-4-boilerplate.git
-# Navigate into the directory
-cd bootstrap-4-boilerplate
-# Install the project's node dependencies
-npm install
-# Gulp commands
-gulp - minify css/js and builds your app into dist directory
-gulp serve - compiles and watch sass, start browser-sync, autoprefixer, concenates js
+If you are looking for the alpha6 version [click here](https://github.com/bradtraversy/bs4starter_alpha6)
+
+### Version
+
+1.0.0
+
+## Install Dependencies
+
+```bash
+npm install 
 ```
 
-## Installing gulp
-This course requires you to have global installations of [gulp](http://gulpjs.com/).
+## Compile Sass & Run Dev Server
+
+```bash
+npm start
 ```
-# Install gulp globally
-npm install -g gulp
+
+Files are compiled into /src

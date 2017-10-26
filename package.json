@@ -1,28 +1,22 @@
 {
-  "name": "bootstrap-4-boiler-plate",
+  "name": "bs4starter",
   "version": "1.0.0",
-  "description": "a bootstrap 4 boiler plate with sass, concatenation, minification, autoprefixer, browser-sync, git and gulp task runner",
+  "description": "Bootstrap 4 starter workflow",
   "main": "index.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "start": "gulp"
   },
-  "author": "wapbamboogie",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wapbamboogie/bootstrap-4-boilerplate"
+  "author": "Brad Traversy",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.11.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.11.1",
-    "del": "^2.2.0",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-html-replace": "^1.5.5",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.3"
+    "gulp-sass": "^3.1.0"
   }
 }

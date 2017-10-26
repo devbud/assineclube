@@ -1,0 +1,219 @@
+// Main Sass File
+
+/* Base Styles -------------------- */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Custom Mixins -------------------- */
+
+@mixin bg-default {
+    background-color: rgb(79, 97, 109);
+}
+
+@mixin opacity {
+	opacity: 0.8;
+}
+
+@mixin transition-smooth {
+	-webkit-transition: 0.3s all;
+	-o-transition: 0.2s all;
+	-moz-transition: 0.2s all;
+	-ms-transition: 0.2s all;
+	transition: 0.2s all
+}
+
+@mixin transition {
+	transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	-ms-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+@mixin transform-zoom {
+	-webkit-transform: scale(1.05, 1.05);
+	-moz-transform: scale(1.05, 1.05);
+	-ms-transform: scale(1.05, 1.05);
+	-o-transform: scale(1.05, 1.05);
+	transform: scale(1.05, 1.05);
+}
+
+@mixin translate {
+	-webkit-transform: translate(5px,0);
+	-moz-transform: translate(5px,0);
+	-ms-transform: translate(5px,0);
+	-o-transform: translate(5px,0);
+	transform: translate(5px,0);
+}
+
+a:before,
+a:after {
+  cursor: pointer;
+  @include transition-smooth;
+}
+
+a {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -ms-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+
+/* HEADER */
+
+nav {
+	height: 60px;
+	@include bg-default;
+	.home {
+		background: url(../img/icon-home.png) no-repeat 0 center;
+		width: 50px;
+		height: 59px;
+		img {
+			margin-left: 70px;
+			margin-top: 18px;
+			width: 204px;
+			height: 23px;
+			padding-bottom: 5px;
+			@include transition;
+			@include transition-smooth;
+			&:hover {
+				@include transform-zoom;
+				@include opacity;
+			}
+		}
+	}
+	ul.nav-desk {
+		float: right;
+		list-style:none;
+		// margin-top: 17px;
+		li {
+			display: inline;
+			margin-left: 16px;
+		}
+		a {
+			background: rgb(98, 114, 124);
+			border-radius: 13.5px;
+			border: 1px solid rgba(255,255,255, 0.0);
+			padding: 6px 18px;
+			font-size: 12px;
+			font-family: "Roboto Condensed", sans-serif;
+			text-transform: uppercase;
+			color: white;
+			@include transition;
+			&:hover {
+				border: 1px solid rgba(255,255,255, 0.3);
+				@include opacity;
+			}
+		}
+	}
+}
+.top-bar {
+	background: white;
+	.revista-marcas {
+		ul {
+			padding: 0;
+			list-style: none;
+			justify-content: space-between;
+			align-items: center;
+			li {
+				display:inline;
+			}
+			img {
+				transform: scale(.9);
+				// margin-right: 10px;
+				@include transition;
+				@include transition-smooth;
+				&:hover {
+					@include transform-zoom;
+				}
+
+			}
+		}
+	}
+}
+
+
+/* LAYOUT */
+
+.slider{
+	ul {
+		padding:0;
+		list-style: none;
+	}
+	li{ display:inline;
+		img{
+			width:100%;
+		}
+	}
+}
+
+h1.title {
+	font-family:"Roboto Condensed", sans-serif;
+	font-size: 38px;
+	font-weight: 900;
+	background: url(../img/title_line.png) no-repeat center center;
+	margin: 30px 0;
+	span.bg-title{
+		background:white;
+		padding: 0 30px;
+	}
+	span.color-title {
+		color: #c00d0e;
+	}
+}
+
+h2.title {
+	font-family:"Roboto Condensed", sans-serif;
+	font-size: 32px;
+	font-weight:100;
+	letter-spacing:-1px;
+}
+
+.newsletter {
+	height: 256px;
+	background-color: rgb(223, 223, 223);
+}
+
+
+
+/* FOOTER */
+footer {
+	height: 520px;
+	@include bg-default;
+}
+
+.copyright {
+	padding: 30px 0 50px 0; 
+	a {
+		font-family: "Roboto Condensed", sans-serif;
+		font-size: 14px;
+	}
+}
+
+// CLASSE MARGIN RIGHT
+.mg-right {
+	float: right;
+}
+
