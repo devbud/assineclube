@@ -80,6 +80,15 @@ a:hover {
   text-decoration: none;
 }
 
+/* SCALE EFFECT */
+.scale-effect {
+	@include transition;
+	@include transition-smooth;
+	&:hover {
+		@include transform-zoom;
+	}
+}
+
 
 /* HEADER */
 
