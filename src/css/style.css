@@ -90,7 +90,7 @@ nav {
       -moz-transition: opacity .25s ease-in-out;
       -webkit-transition: opacity .25s ease-in-out; }
       nav ul.nav-desk a:hover {
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         opacity: 0.8; }
 
 .top-bar {
