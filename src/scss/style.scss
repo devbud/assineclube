@@ -15,7 +15,7 @@ body {
 	background-color: rgb(192,13,14);
 }
 @mixin opacity {
-	opacity: 0.8;
+	opacity: 0.88;
 }
 
 @mixin color-red{
@@ -106,7 +106,7 @@ a:hover {
 }
 
 .txt-p {
-	font-size:22px;
+	font-size:20px;
 }
 
 .bg-red {
@@ -235,14 +235,23 @@ h2.title {
 		line-height: 30px;
 		letter-spacing:-1px;
 	}
-	.btn-assine {
-		background:#f1f1f1;
-		span {
-			padding: 6px 20px;
-		}
-	}
 }
 
+p.txt-p {margin-bottom: 13px;}
+
+a.btn-assine {
+		@include bg-default;
+		background-image: url(../img/seta.gif);
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: contain;
+		padding: 11px 16px 12px;
+		opacity: 1;
+		&:hover {
+			@include opacity;
+			// opacity: 0.9;
+		}
+	}
 
 img.kit-churras {margin-top: -40px;}
 

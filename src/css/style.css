@@ -64,7 +64,7 @@ a:hover {
   font-weight: 900; }
 
 .txt-p {
-  font-size: 22px; }
+  font-size: 20px; }
 
 .bg-red {
   background-color: #c00d0e; }
@@ -106,7 +106,7 @@ nav {
         -ms-transform: scale(1.05, 1.05);
         -o-transform: scale(1.05, 1.05);
         transform: scale(1.05, 1.05);
-        opacity: 0.8; }
+        opacity: 0.88; }
   nav ul.nav-desk {
     float: right;
     list-style: none; }
@@ -128,7 +128,7 @@ nav {
       -webkit-transition: opacity .25s ease-in-out; }
       nav ul.nav-desk a:hover {
         border: 1px solid rgba(255, 255, 255, 0.2);
-        opacity: 0.8; }
+        opacity: 0.88; }
 
 .top-bar {
   background: white;
@@ -190,10 +190,19 @@ h2.title {
   line-height: 30px;
   letter-spacing: -1px; }
 
-.assine-um .btn-assine {
-  background: #f1f1f1; }
-  .assine-um .btn-assine span {
-    padding: 6px 20px; }
+p.txt-p {
+  margin-bottom: 13px; }
+
+a.btn-assine {
+  background-color: #4f616d;
+  background-image: url(../img/seta.gif);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  padding: 11px 16px 12px;
+  opacity: 1; }
+  a.btn-assine:hover {
+    opacity: 0.88; }
 
 img.kit-churras {
   margin-top: -40px; }
