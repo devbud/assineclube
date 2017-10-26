@@ -8,7 +8,8 @@ body {
 /* Custom Mixins -------------------- */
 
 @mixin bg-default {
-    background-color: rgb(79, 97, 109);
+    // background-color: rgb(79, 97, 109);
+    background-color: #4f616d;
 }
 @mixin bg-red {
 	// background-color: #c00d0e;
@@ -114,8 +115,8 @@ a:hover {
     letter-spacing: -0.3px;
 }
 
-.letter-space {
-	letter-spacing: -0.7px;
+.txt-space {
+	letter-spacing: -0.35px;
 }
 
 .bg-red {
@@ -126,6 +127,9 @@ a:hover {
 	@include bg-default;
 }
 
+.mt-revistas {
+	margin-top:45px;
+}
 // .img-capas {
 // 	max-height: 310px;
 // }

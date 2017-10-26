@@ -70,14 +70,17 @@ a:hover {
   font-size: 17px;
   letter-spacing: -0.3px; }
 
-.letter-space {
-  letter-spacing: -0.7px; }
+.txt-space {
+  letter-spacing: -0.35px; }
 
 .bg-red {
   background-color: #c00d0e; }
 
 .bg-gray {
   background-color: #4f616d; }
+
+.mt-revistas {
+  margin-top: 45px; }
 
 .mybd {
   min-height: 200px;
