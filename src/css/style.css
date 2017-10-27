@@ -210,7 +210,7 @@ nav {
 
 h1.title {
   font-weight: bold;
-  background: url(../img/title_line.png) no-repeat center center;
+  background: url(../img/title_line.png) repeat-x center center;
   margin: 40px 0; }
   h1.title span.bg-title {
     background: white;
