@@ -276,25 +276,6 @@ img.kit-churras {
       .block-content h5 {
         font-size: 0.8em; } }
 
-/* NEWSLETTER */
-/* FOOTER */
-footer {
-  height: 520px;
-  background-color: #44626D;
-  border: none;
-  outline: none; }
-
-.block-footer h2 {
-  border-bottom: 1px solid white; }
-
-.copyright {
-  padding: 30px 0 50px 0; }
-  .copyright a {
-    font-size: 14px; }
-
-.mg-right {
-  float: right; }
-
 /*NEWSLETTER*/
 .newsletter {
   position: relative;
@@ -321,3 +302,21 @@ footer {
     height: auto; }
   .newsletter .newsletter-frame {
     height: 100px; } }
+
+/* FOOTER */
+footer {
+  height: 520px;
+  background-color: #44626D;
+  border: none;
+  outline: none; }
+
+.block-footer h2 {
+  border-bottom: 1px solid white; }
+
+.copyright {
+  padding: 30px 0 50px 0; }
+  .copyright a {
+    font-size: 14px; }
+
+.mg-right {
+  float: right; }
