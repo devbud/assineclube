@@ -297,7 +297,6 @@ img.kit-churras {
   z-index: 2; }
 
 @media (min-width: 992px) {
-  /*NEWSLETTER*/
   .newsletter {
     height: auto; }
   .newsletter .newsletter-frame {
@@ -314,7 +313,7 @@ footer {
   border-bottom: 1px solid white; }
 
 .copyright {
-  padding: 30px 0 50px 0; }
+  padding: 30px 0 40px 0; }
   .copyright a {
     font-size: 14px; }
 
