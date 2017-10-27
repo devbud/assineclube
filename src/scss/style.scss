@@ -140,11 +140,18 @@ a:hover {
 }
 
 /* HEADER */
+.icon-home {
+  background-image: url(../img/icon_seta.png);
+  background-repeat: no-repeat;
+  background-position: 70px 12px;
+  height: 70px;
+  width: 85px;
+}
 nav {
   height: 60px;
   @include bg-default;
   .home {
-    background: url(../img/icon-home.png) no-repeat 0 center;
+    background: url(../img/icon_home.png) no-repeat 0 center;
     width: 50px;
     height: 59px;
     img {
@@ -336,10 +343,10 @@ img.kit-churras {margin-top: -40px;}
 
 
 /* NEWSLETTER */
-.newsletter { 
-  height: 256px;
-  background-color: rgb(223, 223, 223);
-}
+// .newsletter { 
+//   height: 256px;
+//   background-color: rgb(223, 223, 223);
+// }
 
 
 /* FOOTER */
@@ -368,3 +375,39 @@ footer {
 .mg-right {
   float: right;
 }
+
+/*NEWSLETTER*/
+.newsletter {
+    position:relative;
+    padding:30px 0 50px;
+    background:#f5b642;
+    height:470px;
+    background-color: rgb(223, 223, 223);
+}
+
+.newsletter img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    max-width:100%;
+}
+
+.newsletter .newsletter-frame {
+    position:relative;
+    height: 390px;
+    overflow: hidden;
+    z-index:2;
+}
+
+@media (min-width: 992px) { 
+/*NEWSLETTER*/
+    .newsletter {
+        height:auto;
+    }
+
+    .newsletter .newsletter-frame {
+        height: 100px;
+    }
+}
+
+
