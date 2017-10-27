@@ -207,13 +207,39 @@ nav {
         &:hover {
           @include transform-zoom;
         }
-
       }
     }
   }
 }
 
 /* LAYOUT */
+.carousel-indicators li {
+    top: 12px;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 100px;
+    border:1px solid black;
+    cursor:pointer;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+// .carousel-control-next-icon {
+//     background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' f…%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E);
+// }
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    display: none;
+}
+
+
+
 .slider{
   ul {
     padding:0;

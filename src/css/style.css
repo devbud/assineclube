@@ -170,6 +170,24 @@ nav {
         transform: scale(1.05, 1.05); }
 
 /* LAYOUT */
+.carousel-indicators li {
+  top: 12px;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: white;
+  border-radius: 100px;
+  border: 1px solid black;
+  cursor: pointer; }
+
+.carousel-indicators .active {
+  background-color: black; }
+
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+  display: none; }
+
 .slider ul {
   padding: 0;
   margin-bottom: 0;
