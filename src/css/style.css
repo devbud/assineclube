@@ -5,6 +5,10 @@ body {
   font-family: "Roboto Condensed", sans-serif; }
 
 /* Custom Mixins -------------------- */
+/* HIDDEN */
+.hidden {
+  display: none !important; }
+
 a:before,
 a:after {
   cursor: pointer;
@@ -129,6 +133,7 @@ nav {
   nav .nav-desk {
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0; }
     nav .nav-desk a {
       background: rgba(255, 255, 255, 0.1);
@@ -209,6 +214,22 @@ nav {
   .slider li img {
     width: 100%; }
 
+/* SHOW & HIDDEN IMAGES */
+@media (max-width: 480px) {
+  .img-desk {
+    display: none !important; } }
+
+@media (min-width: 480px) {
+  .img-mob {
+    display: none !important; } }
+
+/* SHOW ITEM CENTER */
+@media (max-width: 480px) {
+  .item-center {
+    display: flex !important;
+    text-align: center;
+    margin: 0 auto !important; } }
+
 h1.title {
   font-weight: bold;
   background: url(../img/title_line.png) repeat-x center center;
@@ -216,6 +237,11 @@ h1.title {
   h1.title span.bg-title {
     background: white;
     padding: 0 30px; }
+  @media (max-width: 480px) {
+    h1.title {
+      font-size: 26px;
+      text-align: center;
+      background: none; } }
 
 h2.title {
   font-size: 32px;
@@ -305,7 +331,7 @@ img.kit-churras {
 
 /* FOOTER */
 footer {
-  height: 520px;
+  min-height: 520px;
   background-color: #4f616d;
   border: none;
   outline: none; }
