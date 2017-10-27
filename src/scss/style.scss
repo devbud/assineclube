@@ -89,8 +89,8 @@ a:hover {
   text-decoration: none;
 }
 
-/* SCALE EFFECT */
-.scale-effect {
+/* EFFECT SCALE*/
+.effect-scale {
   @include transition;
   @include transition-smooth;
   &:hover {
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .txt-bld {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .txt-p {
@@ -255,8 +255,8 @@ nav {
 
 h1.title {
   // font-family:"Roboto Condensed", sans-serif;
-  font-size: 38px;
-  font-weight: 900;
+  // font-size: 38px;
+  font-weight: bold;
   background: url(../img/title_line.png) no-repeat center center;
   margin: 40px 0;
   span.bg-title{
@@ -291,7 +291,7 @@ a.btn-assine {
     background-size: contain;
     opacity: 1;
     display: inline-block;
-      padding: 10px;
+    padding: 10px;
     &:hover {
       @include opacity;
       // opacity: 0.9;
@@ -325,6 +325,12 @@ img.kit-churras {margin-top: -40px;}
     font-size: 1.12em;
     color: #000000;
     letter-spacing: -0.02em;
+    @media (max-width: 1024px) {
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      font-size: 0.8em;
+    }
   }
 }
 
@@ -342,6 +348,12 @@ footer {
   @include bg-default;
   border: none;
   outline: none;
+}
+
+.block-footer {
+  h2{
+    border-bottom: 1px solid white;
+  }
 }
 
 .copyright {

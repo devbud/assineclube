@@ -368,7 +368,28 @@
           <div class="col-sm-12">
             <h1 class="title text-center mt-5 mb-2"><spa  class="txt-red">Newsletter</span></h1>
             <h2 class="title text-center">Cadastre-se e receba nossas promoções e ofertas!</h2>
-          </div>
+            <form accept-charset="UTF-8" method="post" name="formIntegration" id="formIntegration" onsubmit="return DinamizeValidateForm(this)" action="https://receiver.emkt.dinamize.com/in/304593/1/e6af">
+              <input type="hidden" name="redirect-url" value="http://assinesalvat.com.br/colecoes/onepiece/newsletter/obrigado.asp">
+              <input type="hidden" name="cmp4" value="Cadastro - Boletim - Coleção One Piece">
+              <input type="hidden" name="text-error" value="">
+                <div class="form-inline">
+                  <div class="form-group">
+                      <input id="cmp2" name="cmp2" class="type_VC " type="text" placeholder="Nome">   
+                      <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                      <span id="inputError2Status" class="sr-only">(error)</span>
+                  </div>
+                  <div class="form-group">
+                    <input id="cmp1" name="cmp1" class="type_EMAIL field-required" type="text" placeholder="E-mail">
+                    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                    <span id="Span1" class="sr-only">(error)</span>
+                  </div>
+                  <div class="form-group">
+                      <input type="submit" name="submit" value="" class="btn-send">
+                  </div>
+              </div>
+            </form>
+
+          </div><!-- .col-sm-12 -->
         </div>
       </div> <!-- /container -->
     </div><!-- /NEWSLETTER -->
@@ -377,9 +398,50 @@
     <footer>
       <div class="container">
           <div class="row">
-            <div class="col-sm-12">
-              
+            <div class="col-sm-12 mt-5">
+              <div class="row">
+                <div class="col-sm-4 block-footer">
+                  <h2 class="text-white pb-3"><strong>Atendimento ao cliente</strong></h2>
+                  <p class="mt-4 text-white">
+                    Entre em contato através do nosso Fale Conosco, clicando aqui. Ou através dos telefones abaixo:
+                    <br /><br />
+                    São Paulo:          11  XXXX-XXXX
+                    <br />
+                    Rio de Janeiro: 21  XXXX-XXXX
+                    <br /><br />
+                    Horário de Atendimento: de segunda a sexta-feira das 9h às 18h, exceto feriados.
+                  </p>
+                </div> <!-- block-footer -->
+
+                <div class="col-sm-4 block-footer">
+                  <h2 class="text-white pb-3"><strong>Pagamento</strong></h2>
+                  <img class="img-fluid mt-4" src="img/pagamentos.png" alt="Formas de Pagamento">
+                </div> <!-- block-footer -->
+
+                <div class="col-sm-4 block-footer">
+                  <h2 class="text-white pb-3 d-flex"><strong>Redes Sociais</strong>
+                    <div class="face d-flex align-items-center ml-4"><a href="#" target="_blank"><img src="img/facebook.png" alt="Facebook</a>"></div>
+                    <div class="face d-flex align-items-center ml-4"><a href="#" target="_blank"><img src="img/twitter.png" alt="Twitter"></a></div>
+                    <div class="face d-flex align-items-center ml-4"><a href="#" target="_blank"><img src="img/instagram.png" alt="Instagr</a>am"></div>
+                    <div class="face d-flex align-items-center ml-4"><a href="#" target="_blank"><img src="img/youtube.png" alt="YouTube"></a></div>
+                  </h2>
+                  
+                  <!-- PÁGINA FACEBOOK -->
+                  <div class="fb-page mt-4 d-flex justify-content-end" data-href="https://pt-br.facebook.com/carasbrasil" data-tabs="timeline" data-height="315" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://pt-br.facebook.com/carasbrasil" class="fb-xfbml-parse-ignore"><a href="https://pt-br.facebook.com/carasbrasil">CARAS Brasil</a></blockquote></div>
+                </div> <!-- block-footer -->
+              </div><!-- .row -->
+              <nav>
+              <div class="col-sm-8 d-flex justify-content-end">
+              <ul class="nav-desk mt-3">
+                <li><a href="#">ASSINE</a></li>
+                <li><a href="#">ASSINE E GANHE</a></li>
+                <li><a href="#">REVISTA DIGITAL</a></li>
+                <li><a href="#">RENOVE</a></li>
+                <li><a href="#">FALE CONOSCO</a></li>
+              </ul>
             </div>
+            </nav>
+            </div> <!-- .col-sm-12 -->
           </div>
         </div> <!-- /container -->
     </footer>
@@ -396,5 +458,15 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <!-- FACEBOOK -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     </body>
 </html>
