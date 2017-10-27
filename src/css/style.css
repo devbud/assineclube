@@ -79,7 +79,7 @@ a:hover {
   background-color: #e00506; }
 
 .bg-gray {
-  background-color: #44626D; }
+  background-color: #4f616d; }
 
 .mt-revistas {
   margin-top: 45px; }
@@ -98,7 +98,7 @@ a:hover {
 
 nav {
   height: 60px;
-  background-color: #44626D; }
+  background-color: #4f616d; }
   nav .home {
     background: url(../img/icon_home.png) no-repeat 0 center;
     width: 50px;
@@ -126,14 +126,12 @@ nav {
         -o-transform: scale(1.05, 1.05);
         transform: scale(1.05, 1.05);
         opacity: 0.88; }
-  nav ul.nav-desk {
-    float: right;
-    list-style: none; }
-    nav ul.nav-desk li {
-      display: inline;
-      margin-left: 16px; }
-    nav ul.nav-desk a {
-      background: #5B737F;
+  nav .nav-desk {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; }
+    nav .nav-desk a {
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 13.5px;
       border: 1px solid rgba(255, 255, 255, 0);
       padding: 6px 18px;
@@ -145,7 +143,10 @@ nav {
       -ms-transition: opacity .25s ease-in-out;
       -moz-transition: opacity .25s ease-in-out;
       -webkit-transition: opacity .25s ease-in-out; }
-      nav ul.nav-desk a:hover {
+      @media (max-width: 1024px) {
+        nav .nav-desk a {
+          padding: 6px 12px; } }
+      nav .nav-desk a:hover {
         border: 1px solid rgba(255, 255, 255, 0.2);
         opacity: 0.88; }
 
@@ -231,7 +232,7 @@ p.txt-p {
   margin-bottom: 13px; }
 
 a.btn-assine {
-  background-color: #44626D;
+  background-color: #4f616d;
   background-image: url(../img/seta.gif);
   background-repeat: no-repeat;
   background-position: right center;
@@ -305,7 +306,7 @@ img.kit-churras {
 /* FOOTER */
 footer {
   height: 520px;
-  background-color: #44626D;
+  background-color: #4f616d;
   border: none;
   outline: none; }
 
@@ -319,3 +320,5 @@ footer {
 
 .mg-right {
   float: right; }
+
+/* MEDIA QUERIES */

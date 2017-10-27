@@ -9,8 +9,8 @@ body {
 /* Custom Mixins -------------------- */
 
 @mixin bg-default {
-    // background-color: rgb(79, 97, 109);
-    background-color: #44626D;
+    // background-color: #44626D;
+    background-color: #4f616d;
 }
 @mixin bg-red {
   // background-color: #c00d0e;
@@ -169,17 +169,19 @@ nav {
       }
     }
   }
-  ul.nav-desk {
-    float: right;
-    list-style:none;
+  .nav-desk {
+    // list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
     // margin-top: 17px;
-    li {
-      display: inline;
-      margin-left: 16px;
-    }
+    // div {
+    //   display: inline;
+    //   margin-left: 16px;
+    // }
     a {
       // background: rgb(98, 114, 124);
-      background: #5B737F;
+      background: rgba(255,255,255, 0.1);
       border-radius: 13.5px;
       border: 1px solid rgba(255,255,255, 0.0);
       padding: 6px 18px;
@@ -188,6 +190,9 @@ nav {
       text-transform: uppercase;
       color: white;
       @include transition;
+      @media (max-width: 1024px) {
+        padding: 6px 12px;
+      }      
       &:hover {
         border: 1px solid rgba(255,255,255, 0.2);
         @include opacity;
@@ -402,3 +407,19 @@ footer {
   float: right;
 }
 
+
+/* MEDIA QUERIES */
+
+// @media (max-width: 1024px)
+
+// @media (max-width: 768px)
+
+// @media (max-width: 425px)
+
+// @media (max-width: 320px)
+
+// @include media-breakpoint-up(xs) { ... }
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
