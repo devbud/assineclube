@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
   </head>
 
   <body>
@@ -35,10 +37,40 @@
               <div><a href="#">REVISTA DIGITAL</a></div>
               <div><a href="#">RENOVE</a></div>
               <div><a href="#">FALE CONOSCO</a></div>
-          </div><!-- .nav -->
-        </div>
+            </div><!-- .nav -->
+          </div>
+        </div> <!-- .row -->
       </div> <!-- /container -->
     </nav>
+    
+
+
+<!--     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">ASSINE E GANHE<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">REVISTA DIGITAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RENOVE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FALE CONOSCO</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    
+
+
+
     <aside class="top-bar">
       <div class="container">
         <div class="row">
@@ -324,8 +356,8 @@
         <!-- SIDEBAR -->
         <aside class="col-sm-12">
           <h1 class="title text-center"><span class="bg-title">Assine e <span class="txt-red">ADQUIRA VANTAGENS</span></span></h1>
-          <div class="row">
-            <div class="col-lg-3 col-sm-6">
+          <div class="row responsive slider">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="block-side"></div><!-- .border-dotted -->
               <div class="block-title text-center bg-gray d-flex justify-content-center align-items-center">
                 <h4 class="text-white"><strong>FRETE GRÁTIS</strong></h4>
@@ -335,7 +367,7 @@
               </div> <!-- .block-content -->
             </div><!-- .col-sm-3 -->
 
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="block-side"></div><!-- .border-dotted -->
               <div class="block-title text-center bg-gray d-flex justify-content-center align-items-center">
                 <h4 class="text-white"><strong>COMODIDADE</strong></h4>
@@ -345,7 +377,7 @@
               </div> <!-- .block-content -->
             </div><!-- .col-sm-3 -->
 
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="block-side"></div><!-- .border-dotted -->
               <div class="block-title text-center bg-gray d-flex justify-content-center align-items-center">
                 <h4 class="text-white"><strong>GARANTIA DE PREÇO</strong></h4>
@@ -355,7 +387,7 @@
               </div> <!-- .block-content -->
             </div><!-- .col-sm-3 -->
 
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="block-side"></div><!-- .border-dotted -->
               <div class="block-title text-center bg-gray d-flex justify-content-center align-items-center">
                 <h4 class="text-white"><strong>GARANTIA DE RECEBIMENTO</strong></h4>
@@ -453,9 +485,110 @@
   </div> <!-- .copyright -->
   <!-- / RODAPE -->
 
+
+
       <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/slick.min.js"></script>
+
+
+
+<script>
+      //SLIDER MODELOS
+      $('.responsive').slick({
+        arrows:false,  
+        dots: true,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+          responsive: [
+        {
+          breakpoint: 1360,
+          settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+          }
+        }
+        ]
+      });
+
+
+      //LOGOS MODELO
+      $('.logos').slick({
+        arrows:true,  
+        dots: true,
+        autoplay: false,
+        autoplaySpeed: 1000,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+          responsive: [
+        {
+          breakpoint: 1360,
+          settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true
+          }
+        }
+        ]
+      });
+    </script>
 
       <!-- FACEBOOK -->
       <div id="fb-root"></div>
@@ -466,11 +599,6 @@
         js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-
-
 
   </body>
 </html>
