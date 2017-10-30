@@ -150,7 +150,13 @@ a:hover {
 }
 
 .mt-revistas {
-  margin-top:45px;
+  margin-bottom:45px;
+}
+
+.mb-revistas {
+  @media (max-width: 768px) {
+    margin-bottom:45px;
+  }
 }
 // .img-capas {
 //  max-height: 310px;
@@ -199,12 +205,14 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
+    align-items: center;
+    flex-direction: row;
     // margin-top: 17px;
     // div {
     //   display: inline;
     //   margin-left: 16px;
     // }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       align-items: center;
       flex-direction: column;
       div {
@@ -236,7 +244,7 @@ nav {
   }
 }
 .nav-footer {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       height: auto;
       padding-bottom: 14px;
     }
@@ -371,6 +379,11 @@ h2.title {
     font-size:31px;
     line-height: 30px;
     letter-spacing:-1px;
+     @media (min-width: 767px) {
+      margin-top: 0;
+      font-size: 1.6em;
+      line-height: 1.2em;
+     }
      @media (max-width: 767px) {
       margin-top: 30px;
       font-size: 1.6em;
@@ -393,11 +406,14 @@ h2.title {
   h5 {
      @media (max-width: 767px) {
         text-align: center;
-        line-height: 1.3em;
-        padding: 0 20px 10px;
+        line-height: 1.2em;
+        padding: 0 40px;
      }
   }
   .hr-mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     @media (max-width: 767px) {
       background-image: url(../img/hr_mob.png);
       background-repeat: repeat-x;
@@ -408,26 +424,35 @@ h2.title {
 }
 
 .assine-dois {
+ @media (max-width: 768px) {
+    display: flex;
+  }
   img {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       margin-top: 30px;
+      width: 270px;
+      height: 175px;
     }
   }
   .btn-picanto {  
     flex-direction: column;
-    align-items: center;
-    bottom: -15px;  
-    @media (max-width: 767px) {
+    align-items: flex-start;
+    top: 14px;
+    left: 14px; 
+    @media (max-width: 768px) {
       padding: 0;
+      top: 50px;
+      left: 32px; 
+      bottom: -15px;
       a { 
-        width: 100%;
+        // width: 100%;
       }
     }
   }
 }
 
-p.txt-p {margin-bottom: 13px;}
-
+p.txt-p {margin-bottom: 0;}
+p.txt-primeiro {margin-bottom: 17px;}
 a.btn-assine {
     @include bg-default;
     background-image: url(../img/seta.gif);
@@ -542,8 +567,13 @@ footer {
   h2{
     border-bottom: 1px solid white;
   }
+  img {
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
   img.pagamentos {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       margin-bottom: 40px;
       width: 100%;
     }
@@ -557,7 +587,7 @@ footer {
     font-size: 14px;
   }
   span {
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       font-size: .9em;
       text-align: center;
       display: block;
