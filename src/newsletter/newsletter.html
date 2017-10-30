@@ -121,8 +121,19 @@
             background: url(../img/buttons_bg.png) 0 0 no-repeat;
         }
 
+
         input[type=submit]:active {
             background-position:-214px -476px;
+        }
+
+        @media (max-width: 767px) {
+          input[type=text] {
+            width: 80%;
+          }
+          input[type=submit] {
+            width: 80%;
+            background: #00814b url(../img/buttons_bg.png) center center no-repeat;
+          }
         }
 
     </style>

@@ -17,13 +17,13 @@ body {
 }
 
 @mixin desk-show {
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     @include hidden;
   }
 }
 
 @mixin mob-show {
-  @media (min-width: 480px) {
+  @media (min-width: 767px) {
     @include hidden;
   }
 }
@@ -168,7 +168,7 @@ a:hover {
   background-position: 70px 12px;
   height: 70px;
   width: 85px;
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
 
   }
 }
@@ -204,7 +204,7 @@ nav {
     //   display: inline;
     //   margin-left: 16px;
     // }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       align-items: center;
       flex-direction: column;
       div {
@@ -236,7 +236,7 @@ nav {
   }
 }
 .nav-footer {
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       height: auto;
       padding-bottom: 14px;
     }
@@ -318,7 +318,7 @@ nav {
 
 /* SHOW ITEM CENTER */
 .item-center, .img-capas {
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     display: flex !important;
     text-align: center;
     margin: 0 auto !important;
@@ -328,13 +328,13 @@ nav {
 
 /* MARGIN TOP MOBILE */
 .mg-top-mob {
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     margin-top: 45px;
   }
 }
 
 .mg-top-mob-txt {
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     margin-top: 20px;
   }
 }
@@ -351,7 +351,7 @@ h1.title {
     padding: 0 20px;
     display: inline-block;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     font-size: 1.8em;
     text-align: center;
     background: none;
@@ -371,7 +371,7 @@ h2.title {
     font-size:31px;
     line-height: 30px;
     letter-spacing:-1px;
-     @media (max-width: 480px) {
+     @media (max-width: 767px) {
       margin-top: 30px;
       font-size: 1.6em;
       line-height: 1.2em;
@@ -379,26 +379,26 @@ h2.title {
      }
   }
   a {
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       width: 90%;
       padding: 14px 10px;
     }
   }
   .text-mob-center {
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       // text-align: center;
       margin: 0 auto;
     }
   }
   h5 {
-     @media (max-width: 480px) {
+     @media (max-width: 767px) {
         text-align: center;
         line-height: 1.3em;
         padding: 0 20px 10px;
      }
   }
   .hr-mob {
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       background-image: url(../img/hr_mob.png);
       background-repeat: repeat-x;
       background-position: bottom;
@@ -409,7 +409,7 @@ h2.title {
 
 .assine-dois {
   img {
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       margin-top: 30px;
     }
   }
@@ -417,7 +417,7 @@ h2.title {
     flex-direction: column;
     align-items: center;
     bottom: -15px;  
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       padding: 0;
       a { 
         width: 100%;
@@ -441,7 +441,7 @@ a.btn-assine {
       @include opacity;
       // opacity: 0.9;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       width: 90%;
       // font-size: 0.9em;
       padding: 14px 10px;
@@ -484,7 +484,7 @@ img.kit-churras {
     @media (max-width: 1024px) {
       font-size: 0.9em;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       font-size: 1.3em;
     }
   }
@@ -499,7 +499,7 @@ img.kit-churras {
     background-color: rgb(223, 223, 223);
 
     h2 {
-       @media (max-width: 480px) {
+       @media (max-width: 767px) {
           font-size: 1.4em;
           padding: 0 40px;
        }
@@ -543,7 +543,7 @@ footer {
     border-bottom: 1px solid white;
   }
   img.pagamentos {
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       margin-bottom: 40px;
       width: 100%;
     }
@@ -557,7 +557,7 @@ footer {
     font-size: 14px;
   }
   span {
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       font-size: .9em;
       text-align: center;
       display: block;
@@ -581,7 +581,7 @@ footer {
 
 // @media (max-width: 1024px)
 
-// @media (max-width: 768px)
+// @media (max-width: 767px)
 
 // @media (max-width: 425px)
 
