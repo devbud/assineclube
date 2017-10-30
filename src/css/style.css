@@ -347,7 +347,8 @@ p.txt-p {
   margin-bottom: 0; }
 
 p.txt-primeiro {
-  margin-bottom: 17px; }
+  margin-bottom: 12px;
+  font-size: 1.2em; }
 
 a.btn-assine {
   background-color: #4f616d;

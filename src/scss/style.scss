@@ -404,6 +404,7 @@ h2.title {
     }
   }
   h5 {
+
      @media (max-width: 767px) {
         text-align: center;
         line-height: 1.2em;
@@ -452,7 +453,10 @@ h2.title {
 }
 
 p.txt-p {margin-bottom: 0;}
-p.txt-primeiro {margin-bottom: 17px;}
+p.txt-primeiro {
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
 a.btn-assine {
     @include bg-default;
     background-image: url(../img/seta.gif);
