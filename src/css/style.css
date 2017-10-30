@@ -135,6 +135,14 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding: 0; }
+    @media (max-width: 768px) {
+      nav .nav-desk {
+        align-items: center;
+        flex-direction: column; }
+        nav .nav-desk div {
+          padding-bottom: 20px; }
+          nav .nav-desk div a {
+            font-size: 1em; } }
     nav .nav-desk a {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 13.5px;
@@ -154,6 +162,11 @@ nav {
       nav .nav-desk a:hover {
         border: 1px solid rgba(255, 255, 255, 0.2);
         opacity: 0.88; }
+
+@media (max-width: 768px) {
+  .nav-footer {
+    height: auto;
+    padding-bottom: 14px; } }
 
 .top-bar {
   background: white;
@@ -225,10 +238,20 @@ nav {
 
 /* SHOW ITEM CENTER */
 @media (max-width: 480px) {
-  .item-center {
+  .item-center, .img-capas {
     display: flex !important;
     text-align: center;
-    margin: 0 auto !important; } }
+    margin: 0 auto !important;
+    width: 90%; } }
+
+/* MARGIN TOP MOBILE */
+@media (max-width: 480px) {
+  .mg-top-mob {
+    margin-top: 45px; } }
+
+@media (max-width: 480px) {
+  .mg-top-mob-txt {
+    margin-top: 20px; } }
 
 h1.title {
   font-weight: bold;
@@ -236,10 +259,11 @@ h1.title {
   margin: 40px 0; }
   h1.title span.bg-title {
     background: white;
-    padding: 0 30px; }
+    padding: 0 20px;
+    display: inline-block; }
   @media (max-width: 480px) {
     h1.title {
-      font-size: 26px;
+      font-size: 1.8em;
       text-align: center;
       background: none; } }
 
@@ -256,27 +280,45 @@ h2.title {
   @media (max-width: 480px) {
     .assine-um h3 {
       margin-top: 30px;
-      font-size: 26px;
+      font-size: 1.6em;
+      line-height: 1.2em;
       text-align: center; } }
 
 @media (max-width: 480px) {
   .assine-um a {
-    width: 80%;
-    padding: 20px 0; } }
+    width: 90%;
+    padding: 14px 10px; } }
 
 @media (max-width: 480px) {
   .assine-um .text-mob-center {
     margin: 0 auto; } }
 
 @media (max-width: 480px) {
+  .assine-um h5 {
+    text-align: center;
+    line-height: 1.3em;
+    padding: 0 20px 10px; } }
+
+@media (max-width: 480px) {
+  .assine-um .hr-mob {
+    background-image: url(../img/hr_mob.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding-bottom: 30px; } }
+
+@media (max-width: 480px) {
   .assine-dois img {
     margin-top: 30px; } }
 
-@media (max-width: 480px) {
-  .assine-dois .btn-picanto {
-    padding: 0; }
-    .assine-dois .btn-picanto a {
-      width: 100%; } }
+.assine-dois .btn-picanto {
+  flex-direction: column;
+  align-items: center;
+  bottom: -15px; }
+  @media (max-width: 480px) {
+    .assine-dois .btn-picanto {
+      padding: 0; }
+      .assine-dois .btn-picanto a {
+        width: 100%; } }
 
 p.txt-p {
   margin-bottom: 13px; }
@@ -292,9 +334,17 @@ a.btn-assine {
   padding: 10px; }
   a.btn-assine:hover {
     opacity: 0.88; }
+  @media (max-width: 480px) {
+    a.btn-assine {
+      width: 90%;
+      padding: 14px 10px;
+      text-align: center;
+      margin: 0 auto;
+      display: block; } }
 
 img.kit-churras {
-  margin-top: -40px; }
+  margin-top: -40px;
+  padding-bottom: 10px; }
 
 /* SIDEBAR */
 .block-side {
@@ -325,7 +375,7 @@ img.kit-churras {
         font-size: 0.9em; } }
     @media (max-width: 768px) {
       .block-content h5 {
-        font-size: 0.8em; } }
+        font-size: 1.3em; } }
 
 /*NEWSLETTER*/
 .newsletter {
@@ -334,6 +384,10 @@ img.kit-churras {
   background: #f5b642;
   height: 470px;
   background-color: #dfdfdf; }
+  @media (max-width: 480px) {
+    .newsletter h2 {
+      font-size: 1.4em;
+      padding: 0 40px; } }
 
 .newsletter img {
   position: absolute;
@@ -343,7 +397,7 @@ img.kit-churras {
 
 .newsletter .newsletter-frame {
   position: relative;
-  height: 390px;
+  height: 220px;
   overflow: hidden;
   z-index: 2; }
 
@@ -363,10 +417,24 @@ footer {
 .block-footer h2 {
   border-bottom: 1px solid white; }
 
+@media (max-width: 480px) {
+  .block-footer img.pagamentos {
+    margin-bottom: 40px;
+    width: 100%; } }
+
 .copyright {
   padding: 30px 0 40px 0; }
   .copyright a {
     font-size: 14px; }
+  @media (max-width: 480px) {
+    .copyright span {
+      font-size: .9em;
+      text-align: center;
+      display: block;
+      padding-bottom: 8px; } }
+  .copyright .ass-mob {
+    align-items: center;
+    flex-direction: column; }
 
 .mg-right {
   float: right; }
