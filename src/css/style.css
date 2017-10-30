@@ -253,6 +253,30 @@ h2.title {
   font-size: 31px;
   line-height: 30px;
   letter-spacing: -1px; }
+  @media (max-width: 480px) {
+    .assine-um h3 {
+      margin-top: 30px;
+      font-size: 26px;
+      text-align: center; } }
+
+@media (max-width: 480px) {
+  .assine-um a {
+    width: 80%;
+    padding: 20px 0; } }
+
+@media (max-width: 480px) {
+  .assine-um .text-mob-center {
+    margin: 0 auto; } }
+
+@media (max-width: 480px) {
+  .assine-dois img {
+    margin-top: 30px; } }
+
+@media (max-width: 480px) {
+  .assine-dois .btn-picanto {
+    padding: 0; }
+    .assine-dois .btn-picanto a {
+      width: 100%; } }
 
 p.txt-p {
   margin-bottom: 13px; }

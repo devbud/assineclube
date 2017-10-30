@@ -339,6 +339,39 @@ h2.title {
     font-size:31px;
     line-height: 30px;
     letter-spacing:-1px;
+     @media (max-width: 480px) {
+      margin-top: 30px;
+      font-size: 26px;
+      text-align: center;
+     }
+  }
+  a {
+    @media (max-width: 480px) {
+      width: 80%;
+      padding: 20px 0;
+    }
+  }
+  .text-mob-center {
+    @media (max-width: 480px) {
+      // text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+.assine-dois {
+  img {
+    @media (max-width: 480px) {
+      margin-top: 30px;
+    }
+  }
+  .btn-picanto {    
+    @media (max-width: 480px) {
+      padding: 0;
+      a { 
+        width: 100%;
+      }
+    }
   }
 }
 
