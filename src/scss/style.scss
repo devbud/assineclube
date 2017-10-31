@@ -180,6 +180,14 @@ a:hover {
   }
 }
 
+a.navbar-brand.home {
+  @media (max-width: 368px) {
+    background:none;
+    img {
+      margin-left: 0;
+    }
+  }
+}
 
 .navbar-light .navbar-toggler {
     color: rgba(255, 255, 255, 0.5) !important;

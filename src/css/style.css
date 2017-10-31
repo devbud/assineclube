@@ -107,6 +107,12 @@ a:hover {
     .icon-home {
       background-image: none; } }
 
+@media (max-width: 368px) {
+  a.navbar-brand.home {
+    background: none; }
+    a.navbar-brand.home img {
+      margin-left: 0; } }
+
 .navbar-light .navbar-toggler {
   color: rgba(255, 255, 255, 0.5) !important;
   border-color: rgba(255, 255, 255, 0.1) !important; }
