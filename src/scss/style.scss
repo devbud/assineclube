@@ -176,6 +176,7 @@ a:hover {
   width: 85px;
   @media (max-width: 768px) {
     background-image: none;
+    // background-position: center 27px;
   }
 }
 
@@ -226,7 +227,7 @@ nav {
       a {
         background: rgba(255,255,255, 0.1);
         border-radius: 13.5px;
-        padding: 6px 18px !important;
+        padding: 6px 16px !important;
         font-size: 12px;
         color: white !important;
         @media (max-width: 768px) {
@@ -299,12 +300,13 @@ nav {
 .top-bar {
   background: white;
   border-bottom: 1px solid #e7e7e7;
-  .revista-marcas {
+  .revista-marcas { 
     ul {
       padding: 0;
       list-style: none;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       li {
         display:inline;
       }
@@ -319,6 +321,10 @@ nav {
       }
     }
   }
+}
+
+.my-logos {
+  display: flex;
 }
 
 /* LAYOUT */
@@ -348,7 +354,7 @@ nav {
 }
 
 /* SLIDER */
-.slider{
+.slide{
   ul {
     padding:0;
     margin-bottom: 0;
@@ -695,4 +701,13 @@ footer {
 //   }
 // }
 // 
+// 
+ul.glide__track {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
 
+
+.owl-carousel .owl-item img {
+    width: 80% !important;
+}
