@@ -757,3 +757,46 @@ ul.glide__track {
   height: 37px;
   cursor: pointer !important;
 }
+
+
+
+///////////* PRODUTOS / PÁGINA INTERNA */////////////
+///
+
+.btn-interna {
+  a {
+    font-size: 17px;
+  }
+}
+
+.info-interna {
+  font-size: 16px;
+}
+
+.btn-width {
+  display:block;
+  background:#f4f4f4;
+  border: 1px solid #e7e7e7;
+  color: #333333;
+  cursor: pointer;
+  padding: 16px 20px;
+  @include transition;
+  @include transition-smooth;
+}
+
+.btn-width:hover, .btn-width:active  {
+  display:block;
+  background:#d4d4d4;
+  border-color: #cacaca;
+  color: #333333;
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
+#funcionamento, #video, #regulamento {
+  border: 1px solid #e7e7e7;
+  p {
+    padding: 30px;
+    margin: 0;
+  }
+}

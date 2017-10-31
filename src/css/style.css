@@ -555,3 +555,41 @@ ul.glide__track {
   width: 20px;
   height: 37px;
   cursor: pointer !important; }
+
+.btn-interna a {
+  font-size: 17px; }
+
+.info-interna {
+  font-size: 16px; }
+
+.btn-width {
+  display: block;
+  background: #f4f4f4;
+  border: 1px solid #e7e7e7;
+  color: #333333;
+  cursor: pointer;
+  padding: 16px 20px;
+  transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  -ms-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  transition: 0.2s all; }
+
+.btn-width:hover, .btn-width:active {
+  display: block;
+  background: #d4d4d4;
+  border-color: #cacaca;
+  color: #333333;
+  cursor: pointer;
+  border-radius: 0 !important; }
+
+#funcionamento, #video, #regulamento {
+  border: 1px solid #e7e7e7; }
+  #funcionamento p, #video p, #regulamento p {
+    padding: 30px;
+    margin: 0; }
