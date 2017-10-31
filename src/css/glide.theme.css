@@ -100,6 +100,6 @@
 }
 .glide__bullets > *:hover,
 .glide__bullets > *:focus {
-  border: 2px solid white;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.5);
 }

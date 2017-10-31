@@ -309,7 +309,7 @@ nav {
   background: white;
   border-bottom: 1px solid #e7e7e7;
   .revista-marcas { 
-    ul {
+    div {
       padding: 0;
       list-style: none;
       justify-content: space-between;
@@ -715,12 +715,40 @@ ul.glide__track {
     margin: 0 0 20px 0;
 }
 
-
 .owl-carousel .owl-item img {
-    width: 75% !important;
+    // width: 100% !important;
+    @media (max-width: 1024px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
 }
 
 .owl-stage {
     display: flex;
     align-items: center;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    min-height: 47px;
+    margin: 0;
+    padding: 0;
+}
+
+.owl-prev {
+  background: url(../img/arrows.png) no-repeat 0 center;
+}
+
+.owl-next {
+  background: url(../img/arrows.png) no-repeat right center;
+}
+
+.owl-prev, .owl-next {
+  width: 20px;
+  height: 37px;
+  cursor: pointer !important;
 }
