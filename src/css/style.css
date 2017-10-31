@@ -522,4 +522,8 @@ ul.glide__track {
   margin: 0 0 20px 0; }
 
 .owl-carousel .owl-item img {
-  width: 80% !important; }
+  width: 75% !important; }
+
+.owl-stage {
+  display: flex;
+  align-items: center; }

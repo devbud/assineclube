@@ -717,5 +717,10 @@ ul.glide__track {
 
 
 .owl-carousel .owl-item img {
-    width: 80% !important;
+    width: 75% !important;
+}
+
+.owl-stage {
+    display: flex;
+    align-items: center;
 }
