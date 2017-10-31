@@ -523,8 +523,8 @@ ul.glide__track {
 
 @media (max-width: 1024px) {
   .owl-carousel .owl-item img {
-    padding-left: 24px;
-    padding-right: 24px; } }
+    padding-left: 22px;
+    padding-right: 22px; } }
 
 .owl-stage {
   display: flex;
