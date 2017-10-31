@@ -736,13 +736,12 @@ ul.glide__track {
 
 .owl-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
     width: 100%;
     position: absolute;
-    align-items: center;
+    align-items: center !important;
     min-height: 47px;
     margin: 0;
-    padding: 0;
 }
 
 .owl-prev {
