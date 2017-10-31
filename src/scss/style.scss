@@ -174,20 +174,40 @@ a:hover {
   background-position: 70px 12px;
   height: 70px;
   width: 85px;
-  @media (max-width: 767px) {
-
+  @media (max-width: 768px) {
+    background-image: none;
   }
 }
+
+
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-nav {
+  padding: 0;
+  justify-content: center;
+}
+ 
+
 nav {
   height: 60px;
   @include bg-default;
+  @media (max-width: 768px) {
+    height: auto;
+  }
   .home {
     background: url(../img/icon_home.png) no-repeat 0 center;
     width: 50px;
     height: 59px;
     img {
       margin-left: 70px;
-      margin-top: 18px;
+      margin-top: 13px;
       width: 204px;
       height: 23px;
       padding-bottom: 5px;
@@ -199,6 +219,29 @@ nav {
       }
     }
   }
+  ul {
+    justify-content: space-between !important;
+    padding: 0;
+    li {
+      a {
+        background: rgba(255,255,255, 0.1);
+        border-radius: 13.5px;
+        padding: 7px 18px !important;
+        font-size: 12px;
+        color: white !important;
+        @media (max-width: 768px) {
+          margin-bottom: 10px;
+        }
+        border: 1px solid rgba(255,255,255, 0.0)
+      }
+    }
+  }
+}
+
+
+.nav-footer {
+  // height: 60px;
+  @include bg-default;
   .nav-desk {
     // list-style: none;
     justify-content: space-between;
@@ -628,4 +671,24 @@ footer {
 // @include media-breakpoint-up(xl) { ... }
 // 
 // 
+//
+//
+//
+//
+
+
+// @media(max-width:47.9em) {
+//   .navbar .collapse{max-height:250px;width:100%;overflow-y:auto;overflow-x:hidden;}
+//   .navbar .navbar-brand {float:none;display: inline-block;}
+//   .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
+//   .navbar .navbar-nav {float:none !important;}
+//   .nav-item{width:100%;text-align:left;}
+//   .navbar .collapse .dropdown-menu {
+//     position: relative;
+//     float: none;
+//     background:none;
+//     border:none;
+//   }
+// }
 // 
+
