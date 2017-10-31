@@ -191,6 +191,9 @@ nav {
           padding-bottom: 20px; }
           .nav-footer .nav-desk div a {
             font-size: 1em; } }
+    @media (max-width: 320px) {
+      .nav-footer .nav-desk {
+        font-size: 14px; } }
     .nav-footer .nav-desk a {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 13.5px;
@@ -414,6 +417,9 @@ a.btn-assine {
       text-align: center;
       margin: 0 auto;
       display: block; } }
+  @media (max-width: 320px) {
+    a.btn-assine {
+      font-size: 16px; } }
 
 img.kit-churras {
   margin-top: -40px;
