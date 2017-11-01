@@ -565,6 +565,7 @@ ul.glide__track {
 .btn-width {
   display: block;
   background: #f4f4f4;
+  font-size: 20px;
   border: 1px solid #e7e7e7;
   color: #333333;
   cursor: pointer;
@@ -588,8 +589,14 @@ ul.glide__track {
   cursor: pointer;
   border-radius: 0 !important; }
 
+.more-info {
+  display: block; }
+
 #funcionamento, #video, #regulamento {
   border: 1px solid #e7e7e7; }
   #funcionamento p, #video p, #regulamento p {
     padding: 30px;
     margin: 0; }
+
+#video {
+  display: none; }
