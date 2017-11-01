@@ -106,6 +106,7 @@ a {
   -o-transition-delay: 0s;
   transition-delay: 0s;
   text-decoration: none;
+  opacity: 1;
 }
 a:hover {
   text-decoration: none;
@@ -150,12 +151,12 @@ a:hover {
 }
 
 .mt-revistas {
-  margin-bottom:45px;
+  margin-bottom:30px;
 }
 
 .mb-revistas {
   @media (max-width: 768px) {
-    margin-bottom:45px;
+    margin-bottom:30px;
   }
 }
 // .img-capas {
@@ -401,7 +402,7 @@ nav {
 /* MARGIN TOP MOBILE */
 .mg-top-mob {
   @media (max-width: 768px) {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
@@ -416,7 +417,7 @@ h1.title {
   // font-family:"Roboto Condensed", sans-serif;
   // font-size: 38px;
   font-weight: bold;
-  background: url(../img/title_line.png) repeat-x center center;
+  background: url("../img/title_line.png") repeat-x center center;
   margin: 40px 0;
   span.bg-title{
     background:white;
@@ -435,6 +436,18 @@ h2.title {
   font-size: 32px;
   font-weight:100;
   letter-spacing:-1px;
+}
+h3.title {
+  // font-family:"Roboto Condensed", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  background: url("../img/title_line.png") repeat-x center center;
+  margin: 40px 0;
+  span.bg-title-interna{
+    background:white;
+    padding: 0 20px 0 55px;
+    display: inline-block;
+  }
 }
 
 /* MAIN */
@@ -762,6 +775,82 @@ ul.glide__track {
 
 ///////////* PRODUTOS / PÁGINA INTERNA */////////////
 ///
+.width-full {
+  width: 100%;
+}
+
+.title-interna {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 30px;
+  h3 {
+    font-size: 34px;
+    font-weight: bold;
+  }
+}
+
+.border-slide-produto {
+  background: url(../img/border_slide_produto.png) no-repeat center bottom;
+  padding-bottom: 13px;
+}
+
+.capa-center {
+  margin: 0 auto;
+  display:block;
+}
+
+.icons {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(../img/icons_product.png);
+  background-position-y: -6px;
+  width: 50px;
+  height: 45px;
+  top: 37px;
+}
+.i-conjunto {
+  background-position-x: -22px;
+}
+
+.i-ganhe {
+  background-position-x: -80px;
+}
+
+.i-conheca {
+  background-position-x: -131px;
+  background-position-y: 1px;
+}
+
+.col-one-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon-more, .icon-next {
+    display: block;
+    // width: 100%;
+    height: 70px;
+    background-size:contain !important;
+}
+.icon-more {
+    background: url(../img/icon_more.png) no-repeat center center;
+}
+.icon-next {
+    background: url(../img/icon_next.png) no-repeat center center;
+}
+
+.border-list {
+  border: 2px solid #dbdbdb;
+  padding: 0 -15px;
+}
+
+
+.assine-bloco {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .btn-interna {
   a {
@@ -771,6 +860,32 @@ ul.glide__track {
 
 .info-interna {
   font-size: 16px;
+}
+
+.assine-xyz {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .magazine-block {
+    background-color: #dbdbdb;
+    min-height: 190px;
+    @media (max-width: 1024px) {
+      min-height: 164px;
+    }
+    @media (max-width: 768px) {
+      min-height: 200px;
+    }
+  }
+}
+
+.sec-revistas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .btn-width {
