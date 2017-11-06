@@ -337,6 +337,10 @@ h3.title {
     background: white;
     padding: 0 20px 0 55px;
     display: inline-block; }
+    @media (max-width: 768px) {
+      h3.title span.bg-title-interna {
+        font-size: 28px;
+        text-align: center; } }
 
 /* MAIN */
 .assine-um h3 {
@@ -570,12 +574,39 @@ ul.glide__track {
 .width-full {
   width: 100%; }
 
+.title-assine-interna {
+  display: flex;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 0; }
+  @media (max-width: 768px) {
+    .title-assine-interna {
+      margin-top: 30px; } }
+
 .title-interna {
   border-bottom: 1px solid #dbdbdb;
   margin-bottom: 30px; }
   .title-interna h3 {
     font-size: 34px;
     font-weight: bold; }
+
+h3.title-ass-caras {
+  font-size: 34px;
+  font-weight: bold; }
+  h3.title-ass-caras span.bg-title-interna {
+    padding: 0 20px 0 20px;
+    display: inline-block; }
+    @media (max-width: 768px) {
+      h3.title-ass-caras span.bg-title-interna {
+        font-size: 28px;
+        text-align: center; } }
+
+.compartilhe {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0; }
+
+.img-kit-interna {
+  margin-top: -18px; }
 
 .border-slide-produto {
   background: url(../img/border_slide_produto.png) no-repeat center bottom;
@@ -603,6 +634,12 @@ ul.glide__track {
 .i-conheca {
   background-position-x: -131px;
   background-position-y: 1px; }
+
+.i-caras {
+  background-position-x: 0;
+  background-position-y: 0;
+  margin-top: -48px;
+  width: 10px; }
 
 .col-one-icons {
   display: flex;
@@ -632,7 +669,8 @@ ul.glide__track {
   justify-content: center; }
 
 .btn-interna a {
-  font-size: 17px; }
+  font-size: 17px;
+  margin-left: 0; }
 
 .info-interna {
   font-size: 16px; }
